@@ -1,0 +1,11 @@
+[Unit]
+Description=CPU Cooler
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+ExecStart=/usr/bin/env python3 %h/.local/bin/cpu_cooler.py
+
+[Install]
+WantedBy=default.target
